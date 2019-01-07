@@ -22,7 +22,7 @@ To run this project, you'll need Node 10.0 or higher installed. On OS X and Linu
 Once you've done that:
 
 1. Clone this repo, and run ``npm i`` to install its dependencies.
-2. Clone the `templates repo <https://github.com/nprapps/dailygraphics-templates>`_ to install a selection of premade graphic types.
+2. Clone the `templates repo <https://github.com/wbez/dailygraphics-templates>`_ to install a selection of premade graphic types.
 3. Clone or create a folder to contain your actual graphic files (by default this is ``graphics-js``, in the same parent folder where you put the rig and template repos).
 
    a. If you're at NPR, we have a private ``graphics-js`` repo already created--you should clone that repo and run ``npm install`` in that folder to get our current dependencies.

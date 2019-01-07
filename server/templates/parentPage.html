@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title><%= slug %></title>
-  <link rel="shortcut icon" href="https://media.npr.org/favicon.ico">
+  <link rel="shortcut icon" href="https://www.wbez.org/img/favicon.png">
   <% if (typeof stylesheet == "string") { %>
   <style>
   <%= stylesheet %>
@@ -136,7 +136,7 @@ Production URL: https://<%= config.s3.bucket %>/<%= config.s3.prefix %>/<%= slug
 
     <blockquote class="direct-link">
       <p><em><strong> <a
-        href="<%= config.s3.bucket %>/<%= config.s3.prefix %>/<%= slug %>?mode=childlink&utm_source=nprnews&utm_medium=app&utm_campaign=storyredirect">
+        href="<%= config.s3.bucket %>/<%= config.s3.prefix %>/<%= slug %>">
         Don't see the graphic above? Click here.
       </a></em></strong></p>
     </blockquote>
