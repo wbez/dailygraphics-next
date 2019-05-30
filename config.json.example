@@ -1,5 +1,5 @@
 {
-  "graphicsPath": "../graphics-js",
+  "graphicsPath": "../graphics-in-process",
   "templatePath": "../dailygraphics-templates",
   // leave driveFolder blank to create new sheets in the same folder as their templates
   "driveFolder": "",
