@@ -2,7 +2,7 @@
   "graphicsPath": "../graphics-in-process",
   "templatePath": "../dailygraphics-templates",
   // leave driveFolder blank to create new sheets in the same folder as their templates
-  "driveFolder": "0B2rSjDbnpA5XTThSNDZkWlJTX1E",
+  "driveFolder": "1XFImt1YPdQ7STuHmaojUj9IAn60rSuIB",
   "s3": {
     "bucket": "projects.wbez.org",
     "prefix": "graphics/2019"
