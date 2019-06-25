@@ -94,7 +94,7 @@
     ><%- await t.process(`${config.templateRoot}/embed.html`, { config, slug }) %></textarea>
 
     <%
-    if (typeof COPY != "undefined") {
+    if (COPY.labels.copyedit == true) {
     %>
     <h2>Copyedit e-mail</h2>
 
@@ -111,7 +111,7 @@
 
     <h2>Direct link</h2>
 
-    Underneath the graphic embed, in the text of the story, add a prompt with a direct link to the graphic (without this preview frame, embed code, etc.). You can copy/paste the text below directly into Seamus (new editor) and the formatting should be preserved.
+    Underneath the graphic embed, in the text of the story, add a prompt with a direct link to the graphic (without this preview frame, embed code, etc.). You can copy/paste the text below directly into the CMS and the formatting should be preserved.
 
     <blockquote class="direct-link">
       <%= await t.process(`${config.templateRoot}/link.html`, { config, slug }) %>
