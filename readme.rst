@@ -43,6 +43,13 @@ We recognize that environment variables are not perfectly secure (since installe
 
 The Google OAuth variables should match the client ID and secret for an API app that can access your account. `This post <http://blog.apps.npr.org/2015/03/02/app-template-oauth.html>`_ has details on setting that up.
 
+Alternatively, `service account authentication <https://developers.google.com/identity/protocols/OAuth2ServiceAccount>`_ is also supported. To create a service account and JSON key file, visit your project's `GCP web console <https://console.cloud.google.com/iam-admin/serviceaccounts>`_ to get started.
+
+After creating the service account:
+
+1. Grant write access on your Drive folder (``driveFolder`` in ``config.json``) to the service account email address.
+2. Set GOOGLE_APPLICATION_CREDENTIALS to the file path of the JSON file containing your credentials.
+
 If you're deploying to S3, which is the default for the rig, you'll also need to set:
 
 * AWS_ACCESS_KEY_ID
@@ -61,6 +68,8 @@ The server supports a number of command-line arguments to customize its behavior
 * ``--no-live-reload`` - Turns off live reload when files are edited.
 * ``--no-websockets`` - Turns off the websocket debugging connection. Along with disabling live reload, this may be good in a hosted installation environment.
 * ``--disable-headless`` - Show the Chrome window when capturing fallback images, which can help on some computers
+* ``--target`` - Choose between "stage" and "live" (default of "live") for deployment to S3
+* ``--deployTo`` - Override the ``deployTo`` config.json option (see [Deployment](#deployment), below)
 
 Due to the way NPM scripts work, flags must be passed after a ``--`` separator. For example, running the rig on port 7777 would look like ``npm start -- --port 7777``.
 

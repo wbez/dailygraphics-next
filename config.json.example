@@ -1,11 +1,17 @@
 {
-  "graphicsPath": "../graphics-in-process",
+  "graphicsPath": "../graphics-js",
   "templatePath": "../dailygraphics-templates",
   // leave driveFolder blank to create new sheets in the same folder as their templates
   "driveFolder": "1XFImt1YPdQ7STuHmaojUj9IAn60rSuIB",
   "s3": {
-    "bucket": "projects.wbez.org",
-    "prefix": "graphics/2019"
+    "live": {
+      "bucket": "projects.wbez.org",
+      "prefix": "graphics/2019"
+    },
+    "stage": {
+      "bucket": "staticprojects.wbez.org",
+      "prefix": "graphics/2019"
+    }
   },
   "analyticsID": ""
 }
